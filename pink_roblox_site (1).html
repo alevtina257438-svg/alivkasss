@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pink Roblox Studio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#180b19,#35132f 45%,#160b1b);
+  color:white;min-height:100vh;
+}
+header{
+  padding:22px 7%;display:flex;justify-content:space-between;align-items:center;
+  position:sticky;top:0;background:rgba(20,7,22,.82);backdrop-filter:blur(12px);z-index:10;
+  border-bottom:1px solid rgba(255,105,180,.25)
+}
+.logo{font-size:25px;font-weight:800;color:#ff73c8}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-weight:600}
+nav a:hover{color:#ff73c8}
+.hero{padding:90px 7% 70px;text-align:center}
+.badge{display:inline-block;padding:8px 16px;border-radius:30px;background:#ff4fb3;color:#fff;font-weight:bold}
+h1{font-size:clamp(42px,7vw,78px);margin:20px 0 15px}
+.gradient{background:linear-gradient(90deg,#ff5dbd,#ffb2df);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:auto;color:#e8cfe2;font-size:18px;line-height:1.6}
+.btn{
+ display:inline-block;margin-top:28px;padding:14px 24px;border-radius:14px;
+ background:#ff55b8;color:white;text-decoration:none;font-weight:800;
+ box-shadow:0 8px 25px rgba(255,65,180,.25)
+}
+section{padding:65px 7%;max-width:1200px;margin:auto}
+.title{text-align:center;font-size:35px;margin-bottom:35px}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{
+ background:rgba(255,255,255,.07);border:1px solid rgba(255,110,195,.25);
+ border-radius:22px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.25)
+}
+.game-img{
+ height:170px;background:linear-gradient(135deg,#ff4fb3,#7e2877);
+ display:flex;align-items:center;justify-content:center;font-size:55px
+}
+.card-content{padding:20px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:#d9bfd4;line-height:1.5}
+.socials{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.social{
+ padding:14px 20px;border-radius:14px;text-decoration:none;color:white;
+ background:#241022;border:1px solid #ff5fba;font-weight:bold
+}
+.social:hover{background:#ff55b8;transform:translateY(-2px)}
+.about{
+ background:rgba(255,255,255,.05);border-radius:25px;padding:30px;
+ border:1px solid rgba(255,110,195,.2);text-align:center;color:#e8d1e4;line-height:1.7
+}
+footer{text-align:center;padding:35px;color:#ad8ca8;border-top:1px solid rgba(255,110,195,.15)}
+@media(max-width:650px){nav{display:none}.hero{padding-top:60px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">💗 Pink Roblox</div>
+  <nav>
+    <a href="#games">Ігри</a>
+    <a href="#about">Про мене</a>
+    <a href="#socials">Соцмережі</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <span class="badge">🎮 ROBLOX DEVELOPER</span>
+  <h1>Мій <span class="gradient">Roblox</span> світ</h1>
+  <p>Тут я збираю свої Roblox-ігри, проєкти та нові ідеї. Обирай гру та приєднуйся!</p>
+  <a class="btn" href="#games">ДИВИТИСЯ ІГРИ ↓</a>
+</section>
+
+<section id="games">
+  <h2 class="title">🎀 Мої ігри</h2>
+  <div class="games">
+    <div class="card">
+      <div class="game-img">🐾</div>
+      <div class="card-content">
+        <h3>My Pet World</h3>
+        <p>Збирай милих петомців, досліджуй карту та відкривай нові зони.</p>
+        <a class="btn" href="https://www.roblox.com/" target="_blank">ГРАТИ</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="game-img">🎉</div>
+      <div class="card-content">
+        <h3>Pink Party</h3>
+        <p>Яскравий світ, веселі мініігри та багато рожевого настрою.</p>
+        <a class="btn" href="https://www.roblox.com/" target="_blank">ГРАТИ</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="game-img">✨</div>
+      <div class="card-content">
+        <h3>Нова гра</h3>
+        <p>Тут можна додати наступну Roblox-гру.</p>
+        <a class="btn" href="https://www.roblox.com/" target="_blank">ГРАТИ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">💗 Про мене</h2>
+  <div class="about">
+    Я створюю Roblox-ігри та поступово розвиваю свої проєкти.
+    Тут можна написати коротко про себе, свою команду або свої ігри.
+  </div>
+</section>
+
+<section id="socials">
+  <h2 class="title">📱 Мої соцмережі</h2>
+  <div class="socials">
+    <!-- ЗАМІНИ ПОСИЛАННЯ НИЖЧЕ НА СВОЇ -->
+    <a class="social" href="https://instagram.com/levtinka_/" target="_blank">📸 Instagram: @levtinka_</a>
+    <a class="social" href="https://tiktok.com/" target="_blank">🎵 TikTok</a>
+    <a class="social" href="https://youtube.com/" target="_blank">▶️ YouTube</a>
+    <a class="social" href="https://discord.com/" target="_blank">💬 Discord</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Pink Roblox Studio 💗<br><br>Автор: <a href="https://t.me/kfvvrk" target="_blank" style="color:#ff73c8;text-decoration:none;font-weight:bold;">Telegram: @kfvvrk</a></footer>
+
+</body>
+</html>
